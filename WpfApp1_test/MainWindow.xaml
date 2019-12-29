@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1_test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="fetchProps" Click="FetchProps_Click" Content="Fetch properties" HorizontalAlignment="Left" Margin="221,41,0,0" VerticalAlignment="Top" Width="109" Height="368" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="propertiesListBox" HorizontalAlignment="Left" Height="368" Margin="335,41,0,0" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2"/>
+        <Label Content="Entity properties" HorizontalAlignment="Left" Margin="335,10,0,0" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="selector" HorizontalAlignment="Left" Height="368" Margin="10,41,0,0" VerticalAlignment="Top" Width="206" Grid.ColumnSpan="2"/>
+        <Label Content="Select item" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="methodsListBox" HorizontalAlignment="Left" Height="368" Margin="531,41,0,0" VerticalAlignment="Top" Width="251" Grid.ColumnSpan="2"/>
+        <Label Content="Entity methods" HorizontalAlignment="Left" Margin="531,10,0,0" VerticalAlignment="Top" Width="251" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
